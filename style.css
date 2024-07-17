@@ -1,35 +1,47 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-.p-text{
+.btn-primary {
+    background-color: #E6533C;
+    border: none;
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.p-text {
     color: rgb(161, 174, 185);
+    padding: 2%;
 }
 
 /* header */
-
-header{
+header {
     padding: 40px 100px;
-    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(71, 71, 71) );
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(71, 71, 71));
+    padding-bottom: 0px;
+    margin-bottom: 5%;
+    position: relative;
 }
 
 /* navbar */
-
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
+    align-items: center;
 }
 
-.nav-title{
+.nav-title {
     color: #E6533C;
     font-size: 30px;
     font-family: "Andika", sans-serif;
     font-weight: 700;
     font-style: italic;
 }
-.nav-context{
+
+.nav-context {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -37,22 +49,58 @@ header{
     border-radius: 25px;
     padding-right: 10px;
 }
-.nav-context > li{
+
+.nav-context > li {
     list-style: none;
     color: aliceblue;
 }
-.nav-context > li > button{
-   background-color: #E6533C;
-   border: none;
-   color: aliceblue;
-   padding: 9px 15px;
-   border-radius: 25px;
+
+.nav-context > li > button {
+    background-color: #E6533C;
+    border: none;
+    color: aliceblue;
+    padding: 9px 15px;
+    border-radius: 25px;
 }
 
 /* banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0px;
+}
 
-.banner-title{
+.banner-title {
     font-size: 4rem;
     font-family: "Andika", sans-serif;
     color: aliceblue;
+}
+
+.outline-btn {
+    padding: 10px 20px;
+    color: rgb(220, 236, 255);
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.card {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.452);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+}
+
+.card-1 {
+    top: 30%;
+    right: 5%;
+}
+
+.card-2 {
+    top: 60%;
+    left: 60%;
 }
