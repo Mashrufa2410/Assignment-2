@@ -7,9 +7,9 @@
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
-  }*
+  }
 
-{
+*{
     margin: 0px;
     padding: 0px;
 }
@@ -28,7 +28,7 @@ body{
 
 .p-text {
     color: rgb(161, 174, 185);
-    padding: 2% 0;
+    padding: 5px 0;
     font-weight: 300;
 }
 .section-title{
@@ -197,7 +197,24 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+/* footer */
+footer{
+    background-color: #181818;
+    padding: 4% 5%;
 
+}
+.footer-context{
+    display: flex;
+    justify-content: space-around;
+}
+.foot-title{
+    color: #E6533C;
+    font-size: 45px;
+    font-family: "Andika", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+}
 @media screen and (max-width: 567px) {
 
     header{
@@ -235,5 +252,8 @@ main{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin-left: 40px;
+    }
+    .footer-context{
+        flex-direction: column;
     }
 }
