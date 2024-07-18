@@ -1,27 +1,47 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }*
+
+{
     margin: 0px;
     padding: 0px;
+}
+
+body{
+    color: white;
 }
 
 .btn-primary {
     background-color: #E6533C;
     border: none;
     color: aliceblue;
-    padding: 10px 20px;
+    padding: 10px 40px;
     border-radius: 20px;
 }
 
 .p-text {
     color: rgb(161, 174, 185);
-    padding: 2%;
+    padding: 2% 0;
+    font-weight: 300;
 }
-
+.section-title{
+    font-size: 40px;
+    font-family: "Andika", sans-serif;
+    color: aliceblue;
+}
 /* header */
 header {
-    padding: 40px 100px;
+    padding: 0 100px;
+    padding-top: 57px;
     background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(71, 71, 71));
     padding-bottom: 0px;
-    margin-bottom: 5%;
     position: relative;
 }
 
@@ -45,7 +65,7 @@ header {
     display: flex;
     align-items: center;
     gap: 15px;
-    border: 1px solid #858585;
+    border: 1px solid #474747;
     border-radius: 25px;
     padding-right: 10px;
 }
@@ -76,7 +96,11 @@ header {
     font-family: "Andika", sans-serif;
     color: aliceblue;
 }
-
+.banner-title-span{
+    font-family: "Playwrite CZ", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 .outline-btn {
     padding: 10px 20px;
     color: rgb(220, 236, 255);
@@ -103,4 +127,113 @@ header {
 .card-2 {
     top: 60%;
     left: 60%;
+}
+
+
+/* main */
+
+main{
+    background-color: black;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+/* habits */
+
+.habits-context{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* run */
+.run{
+    padding-bottom: 10%;
+}
+.run-context{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+    background-color: #222222;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/* bmi canculator */
+
+.bmi-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #222222;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+
+}
+
+.bmi-calculator{
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.table-head{
+    color: #ffffff;
+    padding: 12px 20px;
+    background-color: #ffffff11;
+}
+
+.item{
+    padding: 12px 20px;
+    background-color: #ffffff11;
+    color: #ffffffab;
+    font-weight: 400;
+}
+
+/* team */
+
+.team-context{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 567px) {
+
+    header{
+        padding: 0 30px;
+        padding-top: 57px;
+    }
+    .nav-context{
+        display: none;
+    }
+    .banner{
+        flex-direction: column;
+        
+    }
+    .banner-title{
+        font-size: 40px;
+    }
+    .card-1 {
+        top: 45%;
+        right: 5%;
+    }
+    .card-2 {
+        top: 70%;
+        left: 5%;
+    }
+    .habits-context{
+        flex-direction: column;
+    }
+    .bmi-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .run-context{
+        flex-direction: column;
+    }
+    .team-context{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 40px;
+    }
 }
