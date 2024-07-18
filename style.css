@@ -97,9 +97,7 @@ header {
     color: aliceblue;
 }
 .banner-title-span{
-    font-family: "Playwrite CZ", cursive;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Arizonia", cursive;
 }
 .outline-btn {
     padding: 10px 20px;
